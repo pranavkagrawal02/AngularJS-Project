@@ -1,0 +1,13 @@
+D:\AngularJS\AngularJS-Project>browser-sync start --server --directory --files "**/*"
+
+git add .
+
+git status
+
+git commit -m "First web files"
+
+git config --global user.email "pranavkumaragrawal02@gmail.com"
+
+git config --global user.name "pranav"
+
+browser-sync start --server --directory --files "**/*"
