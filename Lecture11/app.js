@@ -6,15 +6,15 @@ angular.module('MsgApp', [])
 
 MsgController.$inject = ['$scope'];
 function MsgController($scope) {
-  $scope.name = "Pranav";
+  $scope.name = "Yaakov";
   $scope.stateOfBeing = "hungry";
 
   $scope.sayMessage = function () {
-    return "Pranav likes to grow plants";
+    return "Yaakov likes to eat healthy snacks at night!";
   };
 
-  $scope.watchleaf = function () {
-    $scope.stateOfBeing = "view";
+  $scope.feedYaakov = function () {
+    $scope.stateOfBeing = "fed";
   };
 }
 
