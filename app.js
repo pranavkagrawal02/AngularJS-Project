@@ -6,7 +6,7 @@ angular.module('DIApp', [])
 
 DIController.$inject = ['$scope', '$filter'];
 function DIController($scope, $filter) {
-  $scope.name = "Yaakov";
+  $scope.name = "Pranav K Agrawal";
 
   $scope.upper = function () {
     var upCase = $filter('uppercase');
