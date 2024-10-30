@@ -1,6 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app='MsgApp'>
   <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
     <title>Lunch Checker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -16,6 +19,11 @@
              <input id="lunch-menu" type="text"
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control">
+         </div>
+         <div class = "Form-Menu">
+           <input id="lunch-menu" type="text"
+           placeholder="1:Rajma chawal , 2:Chole Bhature , 3:Panner Curry , 4:Kadi Chawal , 5:Chole Chawal , 6:Pav Bhaji"
+           class="form-control">
          </div>
          <div class="form-group">
              <button class="btn btn-default">Check If Too Much</button>
