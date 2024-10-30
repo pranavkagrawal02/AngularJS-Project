@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="LunchCheck">
+<html ng-app="LunchCheck">
 <head>
     <title>Lunch Checker</title>
     <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <style>
@@ -10,14 +12,16 @@
     </style>
 </head>
 <body>
-    <div class="container" ng-controller="LunchCheckController">
+    <div ng-controller="LunchCheckController">
+
+
         <h1>Lunch Checker</h1>
 
         <div class="form-group">
             <input id="lunch-menu" type="text"
                    placeholder="list comma separated dishes you usually have for lunch"
                    class="form-control"
-                   ng-model="lunchMenu">
+                  // ng-model="lunchMenu">
         </div>
 
         <div class="form-group">
@@ -35,7 +39,7 @@
         </div>
     </div>
 
-    <script src="angular.min.js"></script>
-    <script src="app.js"></script>
+
 </body>
+
 </html>
