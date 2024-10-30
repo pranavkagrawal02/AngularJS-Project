@@ -12,32 +12,29 @@
     </style>
 </head>
 <body>
-    <div ng-controller="LunchCheckController">
+  <div ng-controller="LunchCheckController">
+
+   Lunch-Menu :<br>
+   1:Rajma chawal <br>
+   2:Chole Bhature <br>
+   3:Panner Curry <br>
+   4:Kadi Chawal <br>
+   5:Chole Chawal <br>
+   6:Pav Bhaji
 
 
-        <h1>Lunch Checker</h1>
 
-        <div class="form-group">
-            <input id="lunch-menu" type="text"
-                   placeholder="list comma separated dishes you usually have for lunch"
-                   class="form-control"
-                  // ng-model="lunchMenu">
-        </div>
+   <h1>Lunch Checker</h1>
 
-        <div class="form-group">
-            <button class="btn btn-default" ng-click="checkLunch()">Check If Too Much</button>
-        </div>
 
-        <div class="form-group message">
-         Lunch-Menu :<br>
-         1:Rajma chawal <br>
-         2:Chole Bhature <br>
-         3:Panner Curry <br>
-         4:Kadi Chawal <br>
-         5:Chole Chawal <br>
-         6:Pav Bhaji
-        </div>
-    </div>
+  <input id="lunch-menu" type="text" ng-model="lunchMenu">
+
+
+
+  <button class="btn btn-default" ng-click=checkLunch()>Check If Too Much</button><br/>
+
+  {{message4}}
+</div>
 
 
 </body>
