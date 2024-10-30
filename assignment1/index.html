@@ -1,37 +1,41 @@
-<!doctype html>
-<html lang="en" ng-app='MsgApp'>
-  <head>
-    <meta charset="utf-8">
-    <script src="angular.min.js"></script>
-    <script src="app.js"></script>
+<!DOCTYPE html>
+<html lang="en" ng-app="LunchCheck">
+<head>
     <title>Lunch Checker</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <style>
-      .message { font-size: 1.3em; font-weight: bold; }
+        .message { font-size: 1.3em; font-weight: bold; }
     </style>
-  </head>
+</head>
 <body>
-   <div class="container">
-     <h1>Lunch Checker</h1>
+    <div class="container" ng-controller="LunchCheckController">
+        <h1>Lunch Checker</h1>
 
-         <div class="form-group">
-             <input id="lunch-menu" type="text"
-             placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control">
-         </div>
-         <div class = "Form-Menu">
-           <input id="lunch-menu" type="text"
-           placeholder="1:Rajma chawal , 2:Chole Bhature , 3:Panner Curry , 4:Kadi Chawal , 5:Chole Chawal , 6:Pav Bhaji"
-           class="form-control">
-         </div>
-         <div class="form-group">
-             <button class="btn btn-default">Check If Too Much</button>
-         </div>
-         <div class="form-group message">
-           <!-- Your message can go here. -->
-         </div>
-   </div>
+        <div class="form-group">
+            <input id="lunch-menu" type="text"
+                   placeholder="list comma separated dishes you usually have for lunch"
+                   class="form-control"
+                   ng-model="lunchMenu">
+        </div>
 
+        <div class="form-group">
+            <button class="btn btn-default" ng-click="checkLunch()">Check If Too Much</button>
+        </div>
+
+        <div class="form-group message">
+         Lunch-Menu :<br>
+         1:Rajma chawal <br>
+         2:Chole Bhature <br>
+         3:Panner Curry <br>
+         4:Kadi Chawal <br>
+         5:Chole Chawal <br>
+         6:Pav Bhaji
+        </div>
+    </div>
+
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
